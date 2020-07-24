@@ -7,8 +7,6 @@ import classes from './Colleges.module.css';
 function Colleges(props) {
     
     const college = {...props.college}
-    console.log(college.offertext.slice(51,59));
-    // const address = 
    
     const l1=college.famous_nearest_places.slice(0,6);
     const s1=college.famous_nearest_places.slice(6,22);
