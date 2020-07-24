@@ -18,12 +18,7 @@ class CollegeList extends React.Component {
     }
 
     showItems= ()=> {
-       console.log("showitem",this.state.item);
         const dataList = this.state.data.slice(0,this.state.item);
-        // if(this.state.loading){
-        //     this.setState({item:dataList.length+10})
-        // }
-        console.log(dataList,this.state.item);
         const colleges = dataList.map((college,index)=>{
             return <Colleges key={index} college={college}/>
         })
@@ -32,18 +27,15 @@ class CollegeList extends React.Component {
      
   
   loadMore= async()=> {
-      console.log("load more");
+
       await this.setState({loading:true});
         if(this.state.data.length===50)
         {
            await this.setState({hasMore:false});
             
         }else{
-            console.log(this.state.item);
-            
                await this.setState((prevstate)=>({item:prevstate.item + 10,loading:!prevstate.loading}));
-            
-               await this.showItems();
+                await this.showItems();
           
         }
        
@@ -61,7 +53,7 @@ class CollegeList extends React.Component {
         let clientHeight =event.srcElement.body.clientHeight;
         let scrollHeight=event.srcElement.body.scrollHeight
         if(scrollTop+clientHeight>=scrollHeight){
-            console.log("event",clientHeight,scrollHeight)
+            this.showmore();
         }
         
     }
