@@ -48,20 +48,7 @@ class CollegeList extends React.Component {
         this.showItems();
 
     }
-    handleScroll=(event)=>{
-        let scrollTop = event.srcElement.body.scrollTop;
-        let clientHeight =event.srcElement.body.clientHeight;
-        let scrollHeight=event.srcElement.body.scrollHeight
-        if(scrollTop+clientHeight>=scrollHeight){
-            this.showmore();
-        }
-        
-    }
-    componentDidMount() {
-        
-        window.addEventListener('scroll', this.handleScroll);
-        
-       }
+   
     render(){
         let more;
         if(this.state.item >= 50){
