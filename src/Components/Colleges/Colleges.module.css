@@ -1,0 +1,128 @@
+.row{
+    width: 50%;
+    display:inline-block;
+    padding:  50px auto;
+    margin: 20px auto;
+    
+}
+.card{
+    width: 90%;
+    padding: 0.7px 0.8px;
+    margin: 10px 30px;
+    border: 0.8px solid gray;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.clgimg{
+    width: 100%;
+    padding: 0 ;
+    filter: brightness(40%);
+    height:  100%;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.column1{
+    width: 70%;
+}
+.column2{
+    width: 30%;
+    padding: 0 15px;
+}
+.container{
+    padding: 0 15px;
+    
+}
+.clgname{
+   padding: 20px auto;
+   margin: 10px auto;
+   font-size: 18px;
+   font-weight: 400;
+    color: rgb(45, 45, 45);
+}
+.dtext{
+    color:'rgb(180,180,200)'
+}
+.container2{
+
+    position: relative;
+    border-radius: 0px 50px 50px 0px;
+   background-color:rgb(192, 238, 229) ;
+    width:80%;
+}
+.offer{
+    font-weight: 50;
+    font-size: 13px;
+    padding: 15px;
+}
+.addr{
+    margin-bottom: 20px;
+    
+}
+.banner{
+    position: relative;
+}
+.bottomLeft{
+    position: absolute;
+    bottom: 10px;
+   display: flex;
+    left: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bottomLeft li{
+    background-color: white;
+    padding:10px 5px;
+    margin: auto 5px;
+    border-radius: 50px;
+  }
+  .bottomRight{
+      display: flex;
+    position: absolute;
+  bottom: 16px;
+  right: 0px;
+  display: flex;
+    color: white;
+    width: 30%;
+  }
+
+  .topRight {
+      background-color: #ffbb33;
+    position: absolute;
+    top: 30px;
+    right: 16px;
+    color: white;
+    padding: 10px;
+  }
+  .rating{
+      margin: 0;
+      padding: 0;
+      float: right;
+  }
+  .remark{
+    float: right;
+  }
+
+@media screen and (max-width:600px){
+    .row{
+        display: block;
+        width:100%;
+        
+    }
+}
+@media screen and (max-width:1020px){
+    .bottomRight{
+       
+      right: 0;
+      left: 16px;
+      top: 8px;
+      
+        bottom: 0;
+        
+      }
+}
+/* .row{
+    columns: 2 auto;
+} */

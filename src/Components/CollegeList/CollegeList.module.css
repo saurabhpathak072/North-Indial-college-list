@@ -1,0 +1,13 @@
+.btn{
+    width: 100%;
+    text-align: center;
+}
+.showmore{
+    margin: 20px;
+    border-radius: 4px;
+    padding: 0.2em 0.6em;
+    border: 1px solid #009ce2;
+    background-color: #00acff;
+    color: #fff;
+    font-size: 2rem;
+}

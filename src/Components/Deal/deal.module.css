@@ -1,0 +1,98 @@
+.part{
+    /* margin-right: -45px; */
+    /* display: ; */
+}
+.column2{
+    display: flex;
+}
+.price{
+   top:5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    text-decoration-line: line-through;
+    font-size: small;
+}
+.tagLobel{
+    /* background-color: red; */
+    /* margin: auto 10px; */
+    padding: 2px 3px;
+    float: left;
+    margin: auto;
+    height: 16px;
+    position:relative;  
+    border: 1px solid red;
+    border-left: none; 
+    width: 20px;
+    background-color: tomato;
+    color: white;
+}
+.tagLobel:before{
+    content: "";
+    position: absolute;
+    top: 2.1px;
+    left: -9px;
+    width: 15px;
+    height: 15px;
+    color: white;
+    background-color: tomato;
+    border: 1px solid red;
+    border-right: none;
+    border-top: none;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.tag{ 
+    font-size: small;
+    float: right;
+    display: flex;
+    align-items: center;
+    padding: auto;
+}
+.dprice{
+    color: red;
+    font-size: xx-large;
+    font-weight: 800;
+    float: right;
+    margin-right: auto;
+    padding: 10px;
+}
+.free{
+    
+  margin: 60% auto;
+color: rgb(3, 161, 129) ;
+}
+.free  ul{
+   list-style-position: outside;
+  }
+
+  
+
+/* 
+You could rotate a square instead, although i doubt the results will be great cross-browser
+
+Modified code:
+
+a {
+    float: left;
+    height: 35px;
+    position:relative;  
+    border: 1px solid red;
+    border-right: none; 
+    width: 100px;
+} 
+a:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: -13px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid red;
+    border-left: none;
+    border-bottom: none;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+} */

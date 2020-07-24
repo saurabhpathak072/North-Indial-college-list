@@ -1,0 +1,35 @@
+.promoted{
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    float: right;
+    height: 35px; 
+    border-left: none; 
+    width: 180px;
+    background-color: skyblue;
+} 
+
+.promoted:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left:  0px;
+
+   
+      width: 0;
+      height: 0;
+      border-top: 18px solid transparent;
+      border-left: 36px solid white;
+      border-bottom: 18px solid transparent;
+
+
+}
+
+.promo{
+    position: absolute;
+    color: white;
+    text-align: center;
+    right: 50px;
+    top:-8px;
+    float: right;
+}
